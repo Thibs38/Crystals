@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "name": "void",
+    "density": 0,
+    "color": [0,0,0,0],
+    "gravity": true,
+    "liquid": true,
+    "defaultTemperature": -273,
+    "thermalConductivity": 0,
+    "bloom": 0
+  },
+  {
+    "id": 1,
+    "name": "air",
+    "density": 0.1,
+    "color": [0,0,0,0],
+    "gravity": true,
+    "liquid": true,
+    "defaultTemperature": 20,
+    "thermalConductivity": 0.01,
+    "bloom": 0
+  },
+  {
+    "id": 2,
+    "name": "sand",
+    "density": 1.5,
+    "color": [1,1,0,1],
+    "temperatureTransfer":
+      { "range": [1600,10000],
+        "successor": 4},
+    "gravity": true,
+    "liquid": false,
+    "defaultTemperature": 20,
+    "thermalConductivity": 0.5,
+    "bloom": 0
+  },
+  {
+    "id": 3,
+    "name": "glass",
+    "density": 1.5,
+    "color": [0,0,0.5,0.5],
+    "temperatureTransfer":
+      { "range": [1600,10000],
+        "successor": 4},
+    "gravity": false,
+    "liquid": false,
+    "defaultTemperature": 20,
+    "thermalConductivity": 0.5,
+    "bloom": 0
+  },
+  {
+    "id": 4,
+    "name": "liquid_glass",
+    "density": 2,
+    "color": [0.1,0,0.5,0.5],
+    "temperatureTransfer":
+    { "range": [-273,1599],
+      "successor": 3},
+    "gravity": true,
+    "liquid": true,
+    "defaultTemperature": 1700,
+    "thermalConductivity": 0.9,
+    "bloom": 0
+  },
+  {
+    "id": 5,
+    "name": "wood",
+    "density": 0.9,
+    "color": [1,0.5,0.5,1],
+    "temperatureTransfer":
+      { "range": [270,10000],
+        "successor": 6},
+    "gravity": false,
+    "liquid": false,
+    "defaultTemperature": 20,
+    "thermalConductivity": 0.9,
+    "bloom": 0
+  },
+  {
+    "id": 6,
+    "name": "fire",
+    "density": 0.05,
+    "color": [1,0,0,1],
+    "temperatureTransfer":
+      { "range": [-273,269],
+        "successor": 7},
+    "timeTransfer":
+      { "lifeTime": 20,
+        "successor": 7},
+    "gravity": true,
+    "liquid": true,
+    "defaultTemperature": 600,
+    "thermalConductivity": 1,
+    "bloom": 2
+  },
+  {
+    "id": 7,
+    "name": "smoke",
+    "density": 0.05,
+    "color": [0.8,0.8,0.8,1],
+    "temperatureTransfer":
+      { "range": [-273,100],
+        "successor": 8},
+    "gravity": true,
+    "liquid": true,
+    "defaultTemperature": 150,
+    "thermalConductivity": 0.1,
+    "bloom": 0
+  },
+  {
+    "id": 8,
+    "name": "ash",
+    "density": 0.9,
+    "color": [0.6,0.6,0.6,1],
+    "gravity": true,
+    "liquid": false,
+    "defaultTemperature": 20,
+    "thermalConductivity": 0.1,
+    "bloom": 0
+  }
+]
